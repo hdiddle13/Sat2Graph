@@ -10,7 +10,7 @@ import showTOPO
 from rtree import index
 from time import time 
 from hopcroftkarp import HopcroftKarp
-from sets import Set
+#from sets import Set
 from subprocess import Popen
 
 
@@ -161,10 +161,10 @@ def TOPOGenerateStartingPoints(OSMMap, check = True, density = 0.00050, region =
                     break
 
 
-                if node_list[-2] == neighbor.keys()[0] :
-                    cur_node = neighbor.keys()[1]
+                if node_list[-2] == list(neighbor.keys())[0] :
+                    cur_node = list(neighbor.keys())[1]
                 else:
-                    cur_node = neighbor.keys()[0]
+                    cur_node = list(neighbor.keys())[0]
 
 
             for i in range(1, len(node_list)-1):
@@ -223,7 +223,7 @@ def TOPOGenerateStartingPoints(OSMMap, check = True, density = 0.00050, region =
                                 result.append((lat, lon, node_list[j], node_list[j+1], alpha * dist - dists[j], dists[j+1] - alpha * dist))
 
 
-    for _,edge in OSMMap.edges.iteritems():
+    for _,edge in OSMMap.edges.items():
 
         svgEdges.append((OSMMap.nodes[edge[0]][0],OSMMap.nodes[edge[0]][1], OSMMap.nodes[edge[1]][0], OSMMap.nodes[edge[1]][1]))
 
@@ -358,7 +358,7 @@ def TOPOGeneratePairs(GPSMap, OSMMap, OSMList, threshold = 0.00010, region = Non
     
     svgEdges = []
 
-    for _,edge in OSMMap.edges.iteritems():
+    for _,edge in OSMMap.edges.items():
         svgEdges.append((OSMMap.nodes[edge[0]][0],OSMMap.nodes[edge[0]][1], OSMMap.nodes[edge[1]][0], OSMMap.nodes[edge[1]][1]))
 
 
@@ -404,7 +404,7 @@ def TOPOGenerateList(GPSMap, OSMMap, check = True, threshold = 0.00010, region =
 
     candidateNode = {}
 
-    for edgeId, edge in GPSMap.edges.iteritems():
+    for edgeId, edge in GPSMap.edges.items():
 
         n1 = edge[0]
         n2 = edge[1]
@@ -506,7 +506,7 @@ def TOPO(GPSMap, OSMMap, step = 0.00005, r = 0.00300, num = 1000, threshold = 0.
     
     candidateNode = {}
 
-    for edgeId, edge in GPSMap.edges.iteritems():
+    for edgeId, edge in GPSMap.edges.items():
 
         n1 = edge[0]
         n2 = edge[1]
@@ -623,7 +623,7 @@ def BipartiteGraphMatching(graph):
 def TOPO121(topo_result, roadgraph):
     # create index
     rtree_index = index.Index()
-    for ind in xrange(len(topo_result)):
+    for ind in range(len(topo_result)):
         r = 0.000001
         lat = topo_result[ind][0]
         lon = topo_result[ind][1]
@@ -634,7 +634,7 @@ def TOPO121(topo_result, roadgraph):
     new_list = []
 
     # create dependency
-    for ind in xrange(len(topo_result)):
+    for ind in range(len(topo_result)):
         lat = topo_result[ind][0]
         lon = topo_result[ind][1]
         r_lat = 0.00030
@@ -666,7 +666,7 @@ def TOPO121(topo_result, roadgraph):
     result = []
     mark = {}
 
-    for ind in xrange(len(new_list)-1, -1, -1):
+    for ind in range(len(new_list)-1, -1, -1):
         if new_list[ind][1] in mark:
             print(new_list[ind][0][2])
             if new_list[ind][0][2] < 0.9:
@@ -707,7 +707,7 @@ def TOPOWithPairs(GPSMap, OSMMap, GPSList, OSMList, step = 0.00005, r = 0.00300,
 
     returnResult = []
 
-    for k,itemGPS in GPSList.iteritems():
+    for k,itemGPS in GPSList.items():
 
 
         itemOSM = OSMList[k]
@@ -794,7 +794,7 @@ def TOPOWithPairs(GPSMap, OSMMap, GPSList, OSMList, step = 0.00005, r = 0.00300,
                     if marble in bigraph.keys():
                         bigraph[marble].add(hole_id)
                     else:
-                        bigraph[marble] = Set([hole_id])
+                        bigraph[marble] = set([hole_id])
 
                     bipartite_graph.append((marble, hole_id, ddd))
 
@@ -874,7 +874,7 @@ def TOPOWithPairs(GPSMap, OSMMap, GPSList, OSMList, step = 0.00005, r = 0.00300,
                     if hole in bigraph.keys():
                         bigraph[hole].add(marble_id)
                     else:
-                        bigraph[hole] = Set([marble_id])
+                        bigraph[hole] = set([marble_id])
                     matchedNum += 1
                     #break
 
@@ -981,7 +981,7 @@ def TOPOWithPairsNew(GPSMap, OSMMap, GPSList, OSMList, step = 0.00005, r = 0.003
 
     number_of_holes = []
 
-    for k,itemGPS in GPSList.iteritems():
+    for k,itemGPS in GPSList.items():
 
 
         itemOSM = OSMList[k]
@@ -1053,7 +1053,7 @@ def TOPOWithPairsNew(GPSMap, OSMMap, GPSList, OSMList, step = 0.00005, r = 0.003
                     if marble in bigraph.keys():
                         bigraph[marble].add(hole_id)
                     else:
-                        bigraph[marble] = Set([hole_id])
+                        bigraph[marble] = set([hole_id])
 
                     n1 = latlonNorm((marble[2], marble[3]))
                     n2 = latlonNorm((hole[2], hole[3]))

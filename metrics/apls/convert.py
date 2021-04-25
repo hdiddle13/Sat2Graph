@@ -22,7 +22,7 @@ f_out = sys.argv[2]
 try:
 	neighbors = pickle.load(open(f_in, "r"))
 except:
-	neighbors = pickle.load(open(f_in, "rb"))
+	neighbors = pickle.load(open(f_in, "rb"),encoding="bytes")
 
 
 nodes = []
