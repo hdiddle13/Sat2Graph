@@ -1,0 +1,27 @@
+#,"City, Country",City,City clean,Country clean,Country 1,Country 2,Lat-Long 1,Lat-Long 2,Box size,Tag
+3368,"('Athens', 'United States')",('Athens',Athens,United States, 'United States'),,"('33.8480209', '-83.5374696')","('34.039466', '-83.2408342')",34.68342246325168 km,Urban
+985,"('Birmingham', 'United States')",('Birmingham',Birmingham,United States, 'United States'),,"('33.38376', '-87.122124')","('33.678715', '-86.57815')",60.194985802811665 km,Urban
+2119,"('Columbus', 'United States')",('Columbus',Columbus,United States, 'United States'),,"('39.8086936', '-83.2101797')","('40.157272', '-82.7713119')",53.881254553195134 km,Urban
+15875,"('Troy', 'United States')",('Troy',Troy,United States, 'United States'),,"('42.5338119', '-83.209216')","('42.62421', '-83.086882')",14.202162470924735 km,Urban
+871,"('Tucson', 'United States')",('Tucson',Tucson,United States, 'United States'),,"('31.991623', '-111.0582298')","('32.32095', '-110.708206')",49.23264791435236 km,Urban
+1456,"('Little Rock', 'United States')",('Little Rock',Little Rock,United States, 'United States'),,"('34.6256657', '-92.5215905')","('34.8218226', '-92.1506554')",40.34668126613217 km,Urban
+18015,"('Newport', 'United States')",('Newport',Newport,United States, 'United States'),,"('41.448967', '-71.363448')","('41.5231244', '-71.285086')",10.51963341143305 km,Urban
+15523,"('Concord', 'United States')",('Concord',Concord,United States, 'United States'),,"('43.151787', '-71.66871')","('43.309816', '-71.4567655')",24.590026236793314 km,Urban
+12,"('New York', 'United States')",('New York',New York,United States, 'United States'),,"('40.477399', '-74.25909')","('40.9161785', '-73.7001809')",67.86488217982071 km,Urban
+27,"('Los Angeles', 'United States')",('Los Angeles',Los Angeles,United States, 'United States'),,"('33.659541', '-118.6681776')","('34.337306', '-118.1552947')",88.86535495186281 km,Urban
+183,"('Phoenix', 'United States')",('Phoenix',Phoenix,United States, 'United States'),,"('33.2903739', '-112.3240289')","('33.9183794', '-111.9255201')",78.86571539387378 km,Urban
+215,"('San Francisco', 'United States')",('San Francisco',San Francisco,United States, 'United States'),,"('37.6403143', '-123.173825')","('37.929811', '-122.281479')",84.91847224497295 km,Urban
+258,"('Minneapolis', 'United States')",('Minneapolis',Minneapolis,United States, 'United States'),,"('44.89015', '-93.329163')","('45.05125', '-93.1938584')",20.843585394457044 km,Urban
+5568,"('Woonsocket', 'United States')",('Woonsocket',Woonsocket,United States, 'United States'),,"('41.9789316', '-71.5400433')","('42.0178523', '-71.4581162')",8.047623201147127 km,Rural
+5598,"('Wilkes-Barre', 'United States')",('Wilkes-Barre',Wilkes-Barre,United States, 'United States'),,"('41.2219327', '-75.926932')","('41.272918', '-75.82685')",10.121023330693708 km,Rural
+5963,"('Mount Lebanon', 'United States')",('Mount Lebanon',Mount Lebanon,United States, 'United States'),,"('40.350998', '-80.083494')","('40.401993', '-80.018131')",7.929467144343927 km,Rural
+6924,"('Country Walk', 'United States')",('Country Walk',Country Walk,United States, 'United States'),,"('25.6139938', '-80.4522774')","('25.6539938', '-80.4122774')",5.981050988779396 km,Rural
+7308,"('Cornelius', 'United States')",('Cornelius',Cornelius,United States, 'United States'),,"('35.439268', '-80.9465')","('35.507327', '-80.8160057')",14.045978363988846 km,Rural
+7466,"('Guttenberg', 'United States')",('Guttenberg',Guttenberg,United States, 'United States'),,"('42.7682669', '-91.1183829')","('42.8121494', '-91.0904224')",5.384938438836917 km,Rural
+7572,"('Watervliet', 'United States')",('Watervliet',Watervliet,United States, 'United States'),,"('42.178768', '-86.271719')","('42.198605', '-86.24288')",3.2450405982628148 km,Rural
+7649,"('Derby', 'United States')",('Derby',Derby,United States, 'United States'),,"('37.5186533', '-97.281377')","('37.584569', '-97.222029')",9.001329880524915 km,Rural
+9436,"('Perris', 'United States')",('Perris',Perris,United States, 'United States'),,"('33.7138654', '-117.262542')","('33.8701367', '-117.179494')",18.963081251552598 km,Rural
+9441,"('Pharr', 'United States')",('Pharr',Pharr,United States, 'United States'),,"('26.0641036', '-98.2215294')","('26.2504116', '-98.1593246')",21.557796538597835 km,Rural
+10069,"('Millcreek', 'United States')",('Millcreek',Millcreek,United States, 'United States'),,"('40.660221', '-111.921104')","('40.7143706', '-111.7765331')",13.620078091597666 km,Rural
+10293,"('Smyrna', 'United States')",('Smyrna',Smyrna,United States, 'United States'),,"('39.259705', '-75.633348')","('39.3324551', '-75.577023')",9.425652068558039 km,Rural
+11602,"('Waxahachie', 'United States')",('Waxahachie',Waxahachie,United States, 'United States'),,"('32.3144154', '-96.9636093')","('32.4949537', '-96.744211')",28.754748194955173 km,Rural

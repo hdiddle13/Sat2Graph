@@ -1,0 +1,14 @@
+#,"City, Country",City,City clean,Country clean,Country 1,Country 2,Lat-Long 1,Lat-Long 2,Box size,Tag
+3368,"('Athens', 'United States')",('Athens',Athens,United States, 'United States'),,"('33.8480209', '-83.5374696')","('34.039466', '-83.2408342')",34.68342246325168 km,Urban
+985,"('Birmingham', 'United States')",('Birmingham',Birmingham,United States, 'United States'),,"('33.38376', '-87.122124')","('33.678715', '-86.57815')",60.194985802811665 km,Urban
+2119,"('Columbus', 'United States')",('Columbus',Columbus,United States, 'United States'),,"('39.8086936', '-83.2101797')","('40.157272', '-82.7713119')",53.881254553195134 km,Urban
+15875,"('Troy', 'United States')",('Troy',Troy,United States, 'United States'),,"('42.5338119', '-83.209216')","('42.62421', '-83.086882')",14.202162470924735 km,Urban
+871,"('Tucson', 'United States')",('Tucson',Tucson,United States, 'United States'),,"('31.991623', '-111.0582298')","('32.32095', '-110.708206')",49.23264791435236 km,Urban
+1456,"('Little Rock', 'United States')",('Little Rock',Little Rock,United States, 'United States'),,"('34.6256657', '-92.5215905')","('34.8218226', '-92.1506554')",40.34668126613217 km,Urban
+18015,"('Newport', 'United States')",('Newport',Newport,United States, 'United States'),,"('41.448967', '-71.363448')","('41.5231244', '-71.285086')",10.51963341143305 km,Urban
+15523,"('Concord', 'United States')",('Concord',Concord,United States, 'United States'),,"('43.151787', '-71.66871')","('43.309816', '-71.4567655')",24.590026236793314 km,Urban
+12,"('New York', 'United States')",('New York',New York,United States, 'United States'),,"('40.477399', '-74.25909')","('40.9161785', '-73.7001809')",67.86488217982071 km,Urban
+27,"('Los Angeles', 'United States')",('Los Angeles',Los Angeles,United States, 'United States'),,"('33.659541', '-118.6681776')","('34.337306', '-118.1552947')",88.86535495186281 km,Urban
+183,"('Phoenix', 'United States')",('Phoenix',Phoenix,United States, 'United States'),,"('33.2903739', '-112.3240289')","('33.9183794', '-111.9255201')",78.86571539387378 km,Urban
+215,"('San Francisco', 'United States')",('San Francisco',San Francisco,United States, 'United States'),,"('37.6403143', '-123.173825')","('37.929811', '-122.281479')",84.91847224497295 km,Urban
+258,"('Minneapolis', 'United States')",('Minneapolis',Minneapolis,United States, 'United States'),,"('44.89015', '-93.329163')","('45.05125', '-93.1938584')",20.843585394457044 km,Urban
