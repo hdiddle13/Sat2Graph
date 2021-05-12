@@ -494,18 +494,16 @@ func apls_one_way(graph_gt *graph, graph_prop *graph, ret chan float64) {
 			pair_num += 1 
 
 			
-
-			// if cp1_prop == -1 || cp2_prop == -1 {
-			// 	fmt.Println(shortest_paths_prop[cp1_prop][cp2_prop])
-			// }
-
-			if cp1_prop == -1 || cp2_prop == -1 {
+			d1 := shortest_paths_gt[cp1_gt][cp2_gt]
+			
+			//if (cp1_prop == -1 || cp2_prop == -1) && (d1 > 0.0) {
+			if (cp1_prop == -1 || cp2_prop == -1) {
 				cc += 1.0
 				sum += 1.0
 				continue 
 			} 
 
-			d1 := shortest_paths_gt[cp1_gt][cp2_gt]
+			//d1 := shortest_paths_gt[cp1_gt][cp2_gt]
 			if d1 > min_distance_filter {
 				d2 := shortest_paths_prop[cp1_prop][cp2_prop]
 
@@ -716,9 +714,9 @@ func main() {
 	if len(os.Args) > 4 {
 		// See the header of this file for a detailed description of these parameters 
 		fmt.Println("Use parameters for small tiles (region size=352)")
-		interval_2 = 5.0 // 10 meters (5 * 2)
+		interval_2 = 15.0 // 30 meters (5 * 2)
 		interval_1 = int(interval_2*1.5) 
-		min_distance_filter = 10.0 // 10 meters
+		min_distance_filter = 30.0 // 30 meters
 		prop_step = 3
 		margin_size = 30.0
 		region_size = 352.0
